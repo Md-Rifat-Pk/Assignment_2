@@ -4,9 +4,22 @@
   box-sizing:border-box;
 }
 
+/* Google font */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* shared list */
 .bg-color{
     background-color: rgba(26, 11, 46, 1);
+}
+
+/* small text color */
+.light-grea{
+    color: rgba(255, 255, 255, 1);
 }
 
 /* NAVBAR */
@@ -14,7 +27,7 @@
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:25px 80px;
+  padding:25px 100px;
   border-bottom: 1px solid rgba(65, 37, 103, 1);
   background: rgba(26, 11, 46, 1);
 }
@@ -37,4 +50,99 @@ nav>a{
   cursor:pointer;
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
   color: #FFFFFF;
+}
+
+/* Hreo section */
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./assets/hero-bg.png');
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #0b011d; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle-image-wrap {
+    width: 250px;
+    height: 250px;
+    background-image: url('./assets/hero-circle.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+
+.mic-top-layer {
+    width: 100px; 
+    position: absolute; 
+    z-index: 2; 
+}
+
+
+.new {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    background: #00ffa3;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 3;
+}
+
+
+.text-info { 
+    text-align: center;
+     color: white; 
+}
+.text-info h1 { 
+    font-size: 50px; 
+    margin-bottom: 10px; 
+}
+.text-info p { 
+    color: #ccc; 
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.btn-row { 
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.btn-gradient {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #ff00cc, #3333ff);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid #00ffa3;
+    color: #00ffa3;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-gradient img, .btn-outline img {
+    width: 20px;           
+    height: auto;          
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 8px;     
 }
