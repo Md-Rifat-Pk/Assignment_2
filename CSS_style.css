@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* shared list */
+.bg-color{
+    background-color: rgba(26, 11, 46, 1);
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 80px;
+  border-bottom: 1px solid rgba(65, 37, 103, 1);
+  background: rgba(26, 11, 46, 1);
+}
+.logo{
+    color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.logo span{ color:#eb05b1; }
+
+nav>a{
+  margin:0 32px;
+  text-decoration:none;
+}
+
+.btn{
+  padding:10px 25px;
+  border-radius:25px;
+  border:none;
+  cursor:pointer;
+  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+  color: #FFFFFF;
+}
